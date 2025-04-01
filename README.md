@@ -40,7 +40,7 @@ SALA
 
 - enviar ()
 
-- 
+  
 # Modelo BPMN
 A[Início] -> B[cadastro do usuario] -> C[verificar reserva] -> D[verificar estoque] - {estoque disponivel?} -> E[sala] -> F[enviar]
 B -> [tudo ok]- prosseguir -> [erro]- informar usuario
