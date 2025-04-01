@@ -43,10 +43,15 @@ SALA
   
 # Modelo BPMN
 A[Início] -> B[cadastro do usuario] -> C[verificar reserva] -> D[verificar estoque] - {estoque disponivel?} -> E[sala] -> F[enviar]
+
 B -> [tudo ok]- prosseguir -> [erro]- informar usuario
+
 C -> [tudo ok]- prosseguir -> [não]- informar usuario 
+
 D -> [estoque disponivel]- realizar reserva do livro ->[estoque indisponivel]- informar usuario
+
 E -> [sala disponivel] - tudo ok -> [sala indisponvel] - informar usuario
+
 F -> [enviado] - fim 
 
 
